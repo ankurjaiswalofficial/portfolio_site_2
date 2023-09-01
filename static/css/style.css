@@ -1,6 +1,7 @@
 :root {
   --body-fg: #878e99;
   --body-bg: #212428;
+  --site-white: #fff;
   --primary-fg: #ff014f;
   --primary-fade-fg: #ff014dba;
   --ui_box-bg: #212428;
@@ -64,6 +65,9 @@ body main .ui_button:hover {
   transition: 0.4s;
   transform: scale(1.2) translateY(-0.3rem);
   background: linear-gradient(to right bottom, #212428, #16181c);
+}
+body main .ui_button:hover svg {
+  fill: var(--site-white);
 }
 body main .ui_box {
   margin: 1.6rem;
@@ -156,7 +160,7 @@ body main .ui_box .ui_contact_form .ui_input_set textarea {
 }
 body main .ui_box .ui_contact_form .ui_input_set input:focus,
 body main .ui_box .ui_contact_form .ui_input_set textarea:focus {
-  border: 0.15rem solid #fff;
+  border: 0.15rem solid var(--site-white);
 }
 body main .ui_box .ui_contact_form .ui_input_set .error_field_input:focus,
 body main .ui_box .ui_contact_form .ui_input_set .error_field_input:hover,
@@ -208,7 +212,7 @@ body main .powerSection .i_am_section .header_box * {
   font-weight: 700;
 }
 body main .powerSection .i_am_section .header_box .header_box_h1 {
-  color: #fff;
+  color: var(--site-white);
   font-size: 3.7rem;
   line-height: 1.3;
 }
@@ -221,7 +225,7 @@ body main .powerSection .i_am_section .header_box .header_box_h1 span {
   color: var(--primary-fg);
 }
 body main .powerSection .i_am_section .header_box .header_box_h2 {
-  color: #fff;
+  color: var(--site-white);
   white-space: nowrap;
   line-height: 1.2;
   font-size: 3.6rem;
